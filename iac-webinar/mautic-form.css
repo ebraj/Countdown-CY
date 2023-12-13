@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+
+/* 
+____________GLOBAL STYLING____________
+*/
+
+/* * {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+} */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 2rem;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* Generic Classes */
+.container-1200 {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*
+____________HEADING STYLING____________
+*/
+.heading-section {
+  padding: 80px 40px 160px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+  background-color: #3441c5;
+  color: white;
+}
+.heading-section .container-1200 {
+  max-width: 1000px;
+}
+.heading-section h1 {
+  padding-bottom: 10px;
+}
+.heading-section p {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/*
+____________MAIN STYLING____________
+*/
+main {
+  padding: 0px 10px 70px;
+  position: relative;
+  margin-top: -120px;
+}
+
+.main-section {
+  display: grid;
+  /* align-items: center; */
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+.main-section .main-section-content {
+  max-width: 100%;
+  padding-top: 80px;
+}
+.main-section .main-section-content div:first-child {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.main-section .main-section-content div:first-child p {
+  padding: 0px;
+  margin: 0px;
+}
+.main-section .main-section-content h3 {
+  padding-bottom: 10px;
+}
+.main-section .main-section-content p {
+  color: rgb(93, 93, 93);
+  padding-bottom: 10px;
+}
+.main-section .main-section-content ul li {
+  /* padding-left: 20px; */
+  padding-bottom: 15px;
+  color: rgb(93, 93, 93);
+}
+.main-section .main-section-content ul li span {
+  color: rgb(7, 205, 7);
+  padding-right: 10px;
+}
+
+.main-section .main-section-content img {
+  width: auto;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgb(213, 235, 255);
+  padding: 5px;
+  margin-right: 10px;
+}
+.main-section .book-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-section .book-image img {
+  width: 50%;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+}
+.main-section > div:nth-child(2) {
+  background-color: white;
+  padding: 20px 40px;
+  color: black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-top: 10px solid #ff8911;
+  align-self: self-start;
+}
+.main-section > div:nth-child(2) h4 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.main-section h1,
+.main-section p,
+.main-section button {
+  margin-bottom: 15px;
+}
+.main-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.main-section p {
+  font-size: 18px;
+  line-height: 25px;
+}
+.main-section h3 {
+  font-size: 25px;
+  padding-top: 5px;
+  /* color: rgb(255, 178, 34); */
+}
+.main-section button {
+  background-color: #1b7bc0;
+}
+
+/*
+____________TESTIMONIAL STYLING____________
+*/
+.testimonials-section {
+  padding: 0px 10px 60px;
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.testimonials-section_grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+.testimonials-section_grid > div {
+  padding: 28px;
+  border-radius: 5px;
+  border: 2px solid rgb(234, 234, 234);
+}
+.testimonials-section_grid img {
+  width: auto;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgb(213, 235, 255);
+  padding: 5px;
+  margin-right: 10px;
+}
+.testimonials-section_grid .testimonials-section-inner_grid > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.testimonials-section_grid h3 {
+  font-size: 1.1rem;
+}
+.testimonials-section_grid p {
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: rgb(95, 84, 84);
+}
+/*
+____________FOOTER STYLING____________
+*/
+footer {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/*
+____________RESPONSIVE STYLING____________
+*/
+@media (min-width: 801px) and (max-width: 1000px) {
+  .heading-section {
+    padding: 80px 40px 160px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 70%);
+    background-color: #3441c5;
+    color: white;
+  }
+
+  .testimonials-section_grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .heading-section {
+    padding: 80px 40px 160px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 75%);
+    background-color: #3441c5;
+    color: white;
+  }
+  .testimonials-section_grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*
+  ____________GLOBAL STYLING____________
+  */
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  /*
+  ____________MAIN STYLING____________
+  */
+  .main-section,
+  .hosts-section_grid {
+    grid-template-columns: 1fr;
+  }
+  .main-section h1 {
+    font-size: 2rem;
+  }
+  .main-section p {
+    font-size: 16px;
+  }
+
+  .heading-section {
+    padding: 80px 40px 120px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 78%);
+    background-color: #3441c5;
+    color: white;
+  }
+  /*
+  ____________TESTIMONIAL STYLING____________
+  */
+  .testimonials-section_grid {
+    grid-template-columns: 1fr;
+  }
+}
